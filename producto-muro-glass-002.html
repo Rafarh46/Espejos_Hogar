@@ -1,23 +1,509 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muro glass 002 | Espejos Hogar</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Muro glass 002. Categoría: Muro glass.">
+    <meta name="keywords" content="muro glass 002, muro glass, ingeniería en espejos mx">
+    <meta name="author" content="Ingeniería Industrial Espejos MX">
+    <!-- Page Title -->
+    <title>Muro glass 002 | Ingenieria Industrial Espejos MX</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+
+    <style>
+        /* Pequeños estilos locales para esta página (por si tu custom.css no trae un layout de producto) */
+        .product-hero {
+            padding: 38px 0 10px;
+        }
+        .breadcrumb-mini {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .breadcrumb-mini a {
+            text-decoration: none;
+        }
+        .product-wrap {
+            padding: 30px 0 10px;
+        }
+        .product-card {
+            border-radius: 18px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+        }
+        .product-media {
+            background: #f6f6f6;
+        }
+        .product-media img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .product-info {
+            padding: 22px 22px 18px;
+        }
+        .product-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0 14px;
+        }
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 13px;
+            background: rgba(0,0,0,0.06);
+        }
+        .product-cta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .btn-soft {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            border: 1px solid rgba(0,0,0,0.08);
+            background: #fff;
+        }
+        .btn-primary-soft {
+            background: #111;
+            color: #fff;
+            border-color: #111;
+        }
+        .product-sections {
+            margin-top: 22px;
+        }
+        .section-box {
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+            padding: 18px 18px 12px;
+            margin-bottom: 16px;
+        }
+        .section-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .spec-table td, .spec-table th {
+            vertical-align: top;
+        }
+        .related-back {
+            margin-top: 18px;
+        }
+    </style>
 </head>
+
 <body>
-<header class="py-3 border-bottom">
-  <div class="container d-flex justify-content-between align-items-center">
-    <a href="index.html" class="text-decoration-none"><strong>Espejos Hogar</strong></a>
-    <a href="contact.html" class="btn btn-sm btn-outline-dark">Contacto</a>
-  </div>
-</header>
-<main class="py-5">
-  <div class="container">
-    <a href="javascript:history.back()" class="btn btn-link ps-0">&larr; Volver</a><h1>Muro glass 002</h1><p class="text-muted">Categoría: Muro glass</p><p>Vidrio de 8 mm, Plata real en un alto porcentaje. Acabados antiguos o viejos y acabado espejo manchado.</p><p class="alert alert-secondary">Aquí podrás agregar la descripción detallada y las fotos del producto.</p>
-  </div>
-</main>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/LogoIng.svg" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Topbar Section Start -->
+    <div class="topbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="site-logo">
+                        <a href="./index.html">
+                            <img src="images/LogoIng.svg" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-12">
+                    <div class="topbar-contact-info">
+                        <ul>
+                            <li>
+                                <a href="contact.html">
+                                    <div class="icon-box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31"
+                                            viewBox="0 0 30 31" fill="none">
+                                            <path
+                                                d="M19.7836 29.753C19.659 29.753 19.5335 29.7421 19.4089 29.7197C15.1192 28.9475 10.843 26.6092 7.36841 23.1346C3.89385 19.66 1.55548 15.3838 0.783285 11.0941C0.6378 10.2845 0.97707 9.44247 1.64766 8.94888C2.50643 8.31688 3.43177 7.72934 4.39745 7.20365C5.0377 6.85525 5.79252 6.83581 6.41805 7.15093C8.55645 8.22882 9.9739 10.0241 10.6309 12.4868C10.8091 13.1532 10.6504 13.8759 10.2066 14.4196L8.78969 16.1534C8.56263 16.4314 8.53495 16.8148 8.72107 17.1076C9.92648 19.0042 11.4988 20.5765 13.3955 21.7816C13.6879 21.9681 14.0713 21.9401 14.3497 21.7133L16.0831 20.2967C16.6271 19.8526 17.3489 19.6942 18.0165 19.8721C20.4789 20.5294 22.2742 21.9469 23.3521 24.0853C23.6675 24.7102 23.6481 25.4653 23.2997 26.1056C22.7737 27.0712 22.1861 27.9966 21.5538 28.8554C21.1365 29.4226 20.4695 29.753 19.7836 29.753Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </div>
+                                    <p class="icon-text-phone">Llámanos.</p>
+                                    <p class="icon-text-phone">55 1106 4233</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="header-social-box d-inline-flex">
+                            <div class="header-social-links">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar Section End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="./">
+                        <img src="images/LogoIngOscuro.svg" alt="Logo">
+                    </a>
+
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+
+                                <li class="nav-item submenu">
+                                    <a class="nav-link" href="#">Categorías</a>
+                                    <ul class="product-menu">
+                                        <li class="nav-item"><a class="nav-link" href="categoria-muro-glass.html">Muro glass</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-muro-glass.html">Espejos Quatró Caras</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-espejo-manchado-avejentado.html">Espejo Manchado/Avejentado</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-espejos-con-luz-led.html">Espejos con Luz Led</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-espejos-para-camerino.html">Espejos Para Camerino</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-muro-glass.html">Muro glass</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-espejos-vestidor.html">Espejos Vestidor</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-espejos-modernos.html">Espejos Modernos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-espejos-decorativos.html">Espejos Decorativos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-moldura-para-tu-espejo.html">Moldura para Tú Espejo</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="categoria-espejos-distorsion-casa-risa.html">Espejos Distorsión "La Casa de Risa"</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Search bar (como en tus otras páginas) -->
+                        <ul class="search-bar" id="menu">
+                            <li class="nav-item submenu">
+                                <div class="search-bar-outline">
+                                    <label for="search-toggle" class="search-bar-label">Buscar Categoría</label>
+                                    <input type="text" id="search-toggle" class="search-bar-input">
+                                </div>
+                                <ul class="product-menu">
+                                    <li class="nav-item"><a class="nav-link" href="categoria-muro-glass.html">Muro glass</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-muro-glass.html">Espejos Quatró Caras</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-espejo-manchado-avejentado.html">Espejo Manchado/Avejentado</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-espejos-con-luz-led.html">Espejos con Luz Led</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-espejos-para-camerino.html">Espejos Para Camerino</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-muro-glass.html">Muro glass</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-espejos-vestidor.html">Espejos Vestidor</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-espejos-modernos.html">Espejos Modernos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-espejos-decorativos.html">Espejos Decorativos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-moldura-para-tu-espejo.html">Moldura para Tú Espejo</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="categoria-espejos-distorsion-casa-risa.html">Espejos Distorsión "La Casa de Risa"</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Product Hero / Breadcrumb -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Producto</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Muro glass 002</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">
+                            Categoría: <strong>Muro glass</strong>
+                        </p>
+                        <div class="breadcrumb-mini wow fadeInUp" data-wow-delay="0.25s">
+                            <a href="index.html">Inicio</a> &nbsp;›&nbsp;
+                            <a href="categoria-muro-glass.html">Muro glass</a> &nbsp;›&nbsp;
+                            <span>Muro glass 002</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="related-back text-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <a href="categoria-muro-glass.html" class="btn-soft">
+                            <i class="fa-solid fa-arrow-left"></i> Volver a Muro glass
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section Start -->
+    <section class="product-wrap">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Image -->
+                <div class="col-lg-6">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <a href="images/6 (3).png" class="popup-image">
+                                <img src="images/6 (3).png" alt="Muro glass 002">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="col-lg-6">
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3 style="margin-bottom:6px;">Muro glass 002</h3>
+                            <p style="margin:0; opacity:0.9;">
+                                Espejo de 4 mm con cantos pulidos brillantes.
+                            </p>
+
+                            <div class="product-badges">
+                                <span class="badge-pill"><i class="fa-solid fa-layer-group"></i> Vidrio de 8 mm</span>
+                                <span class="badge-pill"><i class="fa-solid fa-certificate"></i> Plata real en alto porcentaje</span>
+                                <span class="badge-pill"><i class="fa-solid fa-brush"></i> Acabados antiguos o manchados</span>
+                                <span class="badge-pill"><i class="fa-solid fa-screwdriver-wrench"></i> Fijación con clips</span>
+                            </div>
+
+                            <div class="section-box">
+                                <h3>Descripción</h3>
+                                <p>Vidrio de 8 mm, plata real en un alto porcentaje.</p>
+                                <ul>
+                                    <li>Acabados antiguos o viejos, elaboración a base de sulfuro de plata y reducido con agentes y catalizadores para su dureza y acabado.</li>
+                                    <li>Acabado espejo manchado, a base de plata real con sulfato de cobre (según color).</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-cta">
+                                <a class="btn-soft btn-primary-soft"
+                                    href="https://wa.me/525511064233?text=Hola%20Ingenier%C3%ADa%20Industrial%20Espejos%20MX%2C%20me%20interesa%20el%20Muro%20glass%20002.%20%C2%BFMe%20pueden%20cotizar%3F"
+                                    target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-whatsapp"></i> Cotizar por WhatsApp
+                                </a>
+
+                                <a class="btn-soft" href="tel:+525511064233">
+                                    <i class="fa-solid fa-phone"></i> Llamar 55 1106 4233
+                                </a>
+
+                                <a class="btn-soft" href="contact.html">
+                                    <i class="fa-solid fa-envelope"></i> Contacto
+                                </a>
+                            </div>
+
+                            <p style="margin-top:12px; font-size: 13px; opacity: 0.85;">
+                                * Podemos fabricar medidas y acabados especiales para tu proyecto Muro Glass.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                        <!-- Details -->
+            <div class="row product-sections">
+                <div class="col-lg-12">
+                    <div class="section-box">
+                        <h3>Más información</h3>
+                        <p><strong>Limpieza:</strong> Con trapo húmedo y limpiadores para vidrio.</p>
+                        <p><strong>Instalación:</strong> Sobre superficies lisas y firmes, fijar con pegamentos que no manchen la plata.</p>
+                        <p><strong>Instalación de sobreponer:</strong> Los vidrios se entregan con 4 barrenos para fijar con clips.</p>
+                        <p style="margin-bottom:0;"><strong>Garantía:</strong> Contra defectos de fabricación.</p>
+                    </div>
+                    <div class="section-box">
+                        <h3>Aplicaciones</h3>
+                        <p>Ideal para interiores residenciales y comerciales con acabado decorativo tipo espejo antiguo/manchado.</p>
+                    </div>
+                    <div class="section-box">
+                        <h3>Atención y cotización</h3>
+                        <p>Somos fabricantes. Llámenos y con gusto lo atenderemos.</p>
+                        <p style="margin-bottom: 6px;">Ingeniería En Espejos MX.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Product Section End -->
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-header">
+                        <div class="section-title dark-section">
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Tenemos el espejo que necesitas</h2>
+                            <p>Para uso en la Industrial, Almacenes, Hospitales, Tiendas, Talleres, y cualquier lugar
+                                donde usted requiera ver puntos ciegos.
+                            </p>
+                        </div>
+                        <div class="footer-contact-circle">
+                            <img src="images/contact-now-circle.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="about-footer">
+                        <div class="footer-logo">
+                            <img src="images/LogoIngOscuro.svg" alt="">
+                        </div>
+                        <div class="footer-social-links">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="footer-links" style="padding-left: 80px;">
+                        <h3>Enlaces</h3>
+                        <ul class="footer-links-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="https://www.mercadolibre.com.mx/pagina/todolisto9234?item_id=MLM4685574626&category_id=MLM178319&seller_id=32765163&client=recoview-selleritems&recos_listing=true#origin=upp&component=sellerData&typeSeller=eshop">Mercado Libre</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="footer-links">
+                        <h3 class="footer-h3-contact">Contacto</h3>
+                        <ul class="footer-links-contact">
+                            <li class="cellphone">55 11 06 42 33 / 55 5361 0993</li>
+                            <li class="mail">ventas@espejos.com.mx</li>
+                            <li class="location">Roberto Fulton No.1 Colonia La Loma Tlalnepantla Estado de Mexico C.P.
+                                54060</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="footer-copyright-text">
+                                <p>Copyright © 2024 All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Isotop js file -->
+    <script src="js/isotope.min.js"></script>
+    <!-- Magnific Popup Core Js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <script src="js/searchbar.js"></script>
+
+    <script>
+        // Popup imagen (si ya usas magnific en tu theme, esto lo aprovecha)
+        $(document).ready(function () {
+            if ($.fn.magnificPopup) {
+                $('.popup-image').magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: true,
+                    mainClass: 'mfp-img-mobile',
+                    image: { verticalFit: true }
+                });
+            }
+        });
+    </script>
+
+    <!-- Botón flotante Mercado Libre -->
+    <a href="https://www.mercadolibre.com.mx/pagina/todolisto9234?item_id=MLM4685574626&category_id=MLM178319&seller_id=32765163&client=recoview-selleritems&recos_listing=true#origin=upp&component=sellerData&typeSeller=eshop"
+        class="ml-float" target="_blank" rel="noopener" aria-label="Ir a la tienda en Mercado Libre">
+        <img src="images/logo-mercado.png" alt="Mercado Libre" class="ml-icon">
+    </a>
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/525511064233?text=Hola%20Ingenier%C3%ADa%20Industrial%20Espejos%20MX%2C%20me%20interesa%20cotizar%20el%20Espejo%20Mimi%E2%80%99s%20Quatr%C3%B3%20Caras."
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
 </body>
+
 </html>

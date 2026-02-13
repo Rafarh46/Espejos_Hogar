@@ -119,75 +119,67 @@ thead th:first-child {
 thead th:last-child {
 	border-top-right-radius: 15px;
 }
-
-.whatsapp-float {
+/* Variables para mantenerlos alineados en todos los tamaños */
+:root{
+	--float-right: 18px;
+	--float-bottom: 18px;
+	--float-size: 56px;
+	--float-gap: 16px; /* separación entre botones */
+  }
+  
+  /* WhatsApp */
+  .whatsapp-float{
 	position: fixed;
-	right: 18px;
-	bottom: 18px;
+	right: var(--float-right);
+	bottom: var(--float-bottom);
 	z-index: 9999;
-	width: 56px;
-	height: 56px;
+	width: var(--float-size);
+	height: var(--float-size);
 	border-radius: 50%;
 	background: #25D366;
 	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, .18);
-	transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
-}
-
-.whatsapp-float i {
+	box-shadow: 0 10px 20px rgba(0,0,0,.18);
+  }
+  .whatsapp-float i {
 	font-size: 28px;
 	line-height: 1;
 }
 
-.whatsapp-float:hover {
-	transform: translateY(-2px) scale(1.04);
-	box-shadow: 0 14px 28px rgba(0, 0, 0, .22);
-	background: #20bd5a;
-}
-
-@media (max-width: 575.98px) {
-	.whatsapp-float {
-		right: 14px;
-		bottom: 14px;
-		width: 54px;
-		height: 54px;
-	}
-}
-
-
-/* === Botón flotante Mercado Libre, CLON del de WhatsApp === */
-.ml-float {
+  
+  /* Mercado Libre */
+  .ml-float{
 	position: fixed;
-	right: 18px;
-	bottom: 90px !important;
-	/* más arriba, y con !important por si acaso */
+	right: var(--float-right); /* <-- misma derecha */
+	bottom: calc(var(--float-bottom) + var(--float-size) + var(--float-gap)); /* <-- arriba del Whats */
 	z-index: 9999;
-	width: 56px;
-	height: 56px;
+	width: var(--float-size);
+	height: var(--float-size);
 	border-radius: 50%;
 	background: #ffe600;
-	color: #111111;
+	color: #111;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, .18);
-	transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
-}
-
-.ml-float:hover {
-	transform: translateY(-2px) scale(1.04);
-	box-shadow: 0 14px 28px rgba(0, 0, 0, .22);
-	background: #f5d400;
-}
-
+	box-shadow: 0 10px 20px rgba(0,0,0,.18);
+  }
+  
+  /* Móvil */
+  @media (max-width: 575.98px){
+	:root{
+	  --float-right: 14px;
+	  --float-bottom: 14px;
+	  --float-size: 54px;
+	  --float-gap: 14px;
+	}
+  }
+  
 /* Logo dentro del botón, mismo tamaño visual que el ícono de WhatsApp */
 .ml-icon {
-	width: 60%;
-	height: auto;
-	display: block;
+	font-size: 28px;
+	line-height: 1;
 }
 
 
@@ -2441,12 +2433,31 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .main-footer {
-	background: url(../images/footer-bg.svg), var(--primary-color);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-	background-size: auto;
-	padding: 50px 0 0;
+    position: relative;
+    background: var(--primary-color);
+    padding: 50px 0 0;
+    overflow: hidden;
 }
+
+.main-footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/footer-bg.svg) no-repeat bottom left;
+    background-size: auto;
+    opacity: 0.10; /* 👈 aquí controlas transparencia */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.main-footer > * {
+    position: relative;
+    z-index: 1;
+}
+
 
 .footer-header {
 	display: flex;
@@ -2579,31 +2590,30 @@ header.main-header .header-sticky.active {
 .footer-links-links {
 	list-style: none;
 }
-
 .footer-links-contact {
 	display: inline-block;
 	list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 
 .footer-links-contact li {
 	position: relative;
-	margin-bottom: 4px;
-	padding-left: 1.2em;
-
+	margin-bottom: 6px;
+	padding-left: 1.8em; /* más espacio para el emoji */
+	line-height: 1.5;
 }
 
 .footer-links-contact li::before {
-
 	content: "🔥";
-	/* default (will be overridden below) */
 	position: absolute;
-	left: -1.2em;
-	/* same width as padding-left */
-	width: 1.2em;
-	/* keeps alignment consistent */
+	left: 0;            /* <-- ya no negativo */
+	top: 0.1em;         /* ajusta vertical */
+	width: 1.4em;
 	display: inline-block;
 	text-align: center;
 }
+
 
 
 .footer-links-contact .cellphone::before {
